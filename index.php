@@ -97,5 +97,80 @@ echo "<br>";
 $num1 = 100;
 $num2 = 869;
 var_dump($num1 <=> $num2);
+echo "<br>";
+
+echo "<h2>increment & decrement operators</h2>";
+echo "<br>";
+
+$x = 10;
+echo ++$x;
+echo "<br>";
+$x = 9;
+echo $x++;
+echo "<br>";
+$x = 10;
+echo --$x;
+echo "<br>";
+$x= 8;
+echo $x--;
+echo "<br>";
+
+echo "<h2>Logical operators</h2>";
+echo "<br>";
+
+$x = 80;
+$y = 9;
+
+if ($x == 80 && $y == 90){
+    echo "Hello i am kamal";
+    }else {
+        echo "i am nikhil";
+    }
+echo "<br>";
+if ($x == 80 || $y == 90){
+    echo "Hello i am kamal";
+    }else {
+        echo "i am nikhil";
+    }  
+echo "<br>";
+if ($x == 80 xor $y == 90){
+    echo "Hello i am kamal";
+    }else {
+        echo "i am nikhil";
+    }
+echo "<br>";
+if (!($x == 80)){
+    echo "Hello i am kamal";
+    }else {
+        echo "i am nikhil";
+    }              
+echo "<br>";
+
+echo "<h2>String operators</h2>";
+echo "<br>";
+$a = "kamal kant";
+$b = " is a superstar";
+$sum = $a . $b;
+echo "Concatenation string is : " , $sum;
+echo "<br>";
+$txt1 = "my name is kamal ";
+$txt2 = "kant";
+$txt1 .= $txt2;
+echo "Concatenation assignment is : " , $txt1;
+echo "<br>";
+
+echo "<h2>Array operators</h2>";
+$a = ["a"=> "kamal kant" ,"b"=> "nikhil"];
+$b = ["c"=> "tarwai" , "d" => "kamal"];
+
+print_r($a + $b);
+echo "<br>";
+var_dump($a==$b);
+echo "<br>";
+var_dump($a===$b);
+echo "<br>";
+var_dump($a<>$b);
+echo "<br>";
+var_dump($a!==$b);
 
 ?>
